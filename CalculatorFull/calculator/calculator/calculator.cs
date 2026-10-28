@@ -84,5 +84,14 @@ namespace calculator
             operation = btn.Text;
             newOperation = true;
         }
+        private void ButtonClear_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();       // ќчищаем текстовое поле
+            firstvalue = 0.0;       // —брасываем первое число
+            secondvalue = 0.0;      // —брасываем второе число
+            result = 0.0;           // —брасываем результат
+            operation = "";         // —брасываем текущую операцию
+            newOperation = true;    // ”казываем, что следующее введение будет новой операцией
+        }
     }
 }
